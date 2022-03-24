@@ -1,0 +1,97 @@
+
+
+header {
+  padding-top: 7rem;
+  height: 140vh;
+  overflow: hidden;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/*============== CTA ===========*/
+
+.cta {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+/*============== HEADER SOCIALES ===========*/
+
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem; 
+}
+
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-praimary);
+}
+
+/*============== HEADER SOCIALES ===========*/
+
+.me {
+  background: linear-gradient(var(--color-praimary), transparent);
+  margin-top: 5rem;
+  border-radius: 12rem 12rem 0 0;
+  -webkit-border-radius: 12rem 12rem 0 0;
+  -moz-border-radius: 12rem 12rem 0 0;
+  -ms-border-radius: 12rem 12rem 0 0;
+  -o-border-radius: 12rem 12rem 0 0;
+  
+  width: 22rem;
+  height: 30rem;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  overflow: hidden;
+  position: absolute;
+  left: calc(50% - 11rem);
+}
+
+/*============== HEADER DOWN ===========*/
+
+.scroll__down {
+  display: flex;
+  transform: rotate(90deg);
+  position: absolute;
+  right: 0rem;
+  bottom: 5rem;
+  align-items: center;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/* ===================== Media Query (Mediam Device) ===================== */
+
+@media  screen and (max-width: 1024px){
+    header {
+      height: 80vh;
+    }
+}
+
+@media  screen and (max-width: 600px){
+  header {
+    height: 100vh;
+  }
+
+  .scroll__down, .header__socials {
+    display: none;
+  }
+
+}

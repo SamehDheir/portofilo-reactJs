@@ -1,0 +1,55 @@
+.portofilo__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.portofilo__item {
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  border: 1px solid transparent;
+
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.portofilo__item:hover {
+  border-color: var(--color-praimary-variant);
+  background: transparent;
+}
+
+.portofilo__item h3 {
+  margin: 1.2rem 0;
+}
+
+.portofilo__item-cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ================= Media Query (Mediam Device) ================= */
+
+@media screen and (max-width: 1024px) {
+  .portofilo__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+/* ================= Media Query (Small Device) ================= */
+
+@media screen and (max-width: 600) {
+  .portofilo__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
